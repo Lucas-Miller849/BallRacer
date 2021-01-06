@@ -11,4 +11,4 @@ func _physics_process(delta):
 	
 
 func _ready():
-	pass
+	print("Aloha")
