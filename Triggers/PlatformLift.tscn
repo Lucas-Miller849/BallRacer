@@ -11,7 +11,7 @@ albedo_color = Color( 0.0901961, 0.87451, 0.956863, 0.776471 )
 
 [sub_resource type="BoxShape" id=3]
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=4]
 resource_name = "Down"
 tracks/0/type = "bezier"
 tracks/0/path = NodePath("lift:translation:x")
@@ -44,8 +44,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0, 1 )
 }
 
-[sub_resource type="Animation" id=4]
-resource_name = "Up"
+[sub_resource type="Animation" id=5]
 tracks/0/type = "bezier"
 tracks/0/path = NodePath("lift:translation:x")
 tracks/0/interp = 1
@@ -94,7 +93,7 @@ shape = SubResource( 3 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.74949, -1.42508, -7.13327 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Down = SubResource( 5 )
-anims/Up = SubResource( 4 )
+anims/Down = SubResource( 4 )
+anims/Up = SubResource( 5 )
 [connection signal="body_entered" from="." to="." method="_on_PlatformLift_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_PlatformLift_body_exited"]
