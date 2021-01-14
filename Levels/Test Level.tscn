@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Level Geometry/10x1x10.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Level Geometry/2x1x2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Level Geometry/10x1x1.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Level Geometry/5x1x5.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Triggers/PlatformLift.tscn" type="PackedScene" id=7]
 
 [node name="Test Level" type="Spatial"]
 
@@ -29,3 +30,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.311701, 0.388831, 0 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.203132, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
+
+[node name="PlatformLift" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.3878, 2.99796, 7.54717 )
