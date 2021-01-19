@@ -1,0 +1,92 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Level Geometry/10x1x10.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Levels/Level_One.gd" type="Script" id=3]
+
+[node name="Level_One" type="Spatial"]
+script = ExtResource( 3 )
+
+[node name="Enviroment" type="Node" parent="."]
+
+[node name="10x1x10" parent="Enviroment" instance=ExtResource( 1 )]
+
+[node name="10x1x12" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.0931, 0, 0 )
+
+[node name="10x1x13" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.0931, 0, 20.1561 )
+
+[node name="10x1x14" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00409889, 0, 20.1561 )
+
+[node name="10x1x15" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.0189, 0, 20.1561 )
+
+[node name="10x1x16" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.1187, 0, 0.355053 )
+
+[node name="10x1x17" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.1187, 0, 20.1612 )
+
+[node name="10x1x18" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -40.1045, 0, 20.1612 )
+
+[node name="10x1x19" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -40.1045, 0, -0.146667 )
+
+[node name="10x1x20" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -40.1045, 0, 40.0932 )
+
+[node name="10x1x21" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -40.1045, 0, 60.1756 )
+
+[node name="10x1x22" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -40.1045, 0, 80.3817 )
+
+[node name="10x1x23" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.0488, 0, 80.3817 )
+
+[node name="10x1x24" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0397263, 0, 80.3817 )
+
+[node name="10x1x25" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1427, 0, 80.3817 )
+
+[node name="10x1x26" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.375, 0, 80.3817 )
+
+[node name="10x1x27" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.375, 0, 60.5715 )
+
+[node name="10x1x28" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1839, 0, 60.5715 )
+
+[node name="10x1x29" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0953293, 0, 60.5715 )
+
+[node name="10x1x30" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.8552, 0, 60.5715 )
+
+[node name="10x1x31" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.8552, 0, 40.2337 )
+
+[node name="10x1x32" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0602112, 0, 40.2337 )
+
+[node name="10x1x33" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.0709, 0, 40.2337 )
+
+[node name="10x1x34" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.1842, 0, 40.2337 )
+
+[node name="10x1x11" parent="Enviroment" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.0312, 0, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.0228, 46.1261 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.979561, 0.201146, 0, -0.201146, 0.979561, 0, 10.9641, 60.3696 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
