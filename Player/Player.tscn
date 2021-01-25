@@ -3,25 +3,27 @@
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Textures/Marble.jpeg" type="Texture" id=2]
 
-[sub_resource type="PhysicsMaterial" id=4]
+[sub_resource type="PhysicsMaterial" id=1]
 bounce = 0.5
 
-[sub_resource type="SpatialMaterial" id=1]
+[sub_resource type="SpatialMaterial" id=2]
 albedo_texture = ExtResource( 2 )
 
-[sub_resource type="SphereMesh" id=2]
-material = SubResource( 1 )
+[sub_resource type="SphereMesh" id=3]
+material = SubResource( 2 )
 
-[sub_resource type="SphereShape" id=3]
+[sub_resource type="SphereShape" id=4]
 
 [node name="Player" type="RigidBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.50975, 5.65482 )
-physics_material_override = SubResource( 4 )
+collision_layer = 2
+collision_mask = 3
+physics_material_override = SubResource( 1 )
 script = ExtResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-mesh = SubResource( 2 )
+mesh = SubResource( 3 )
 material/0 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-shape = SubResource( 3 )
+shape = SubResource( 4 )

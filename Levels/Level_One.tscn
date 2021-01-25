@@ -1,8 +1,44 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Level Geometry/10x1x10.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/PlayerKB.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Levels/Level_One.gd" type="Script" id=3]
+[ext_resource path="res://Level Geometry/10x1x1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Level Geometry/5x1x5.tscn" type="PackedScene" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Move"
+length = 2.0
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Enviroment/10x1x13:translation:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( -20.0931, -0.25, 0, 0.25, 0, -20.0931, -0.25, 0, 0.25, 0, -20.0931, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1.1, 2 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Enviroment/10x1x13:translation:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -10.5351, -0.25, 0, 0.25, 0, -0.32686, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1.1, 2 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Enviroment/10x1x13:translation:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 20.1561, -0.25, 0, 0.25, 0, 20.1561, -0.25, 0, 0.25, 0, 20.1561, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1.1, 2 )
+}
 
 [node name="Level_One" type="Spatial"]
 script = ExtResource( 3 )
@@ -15,10 +51,10 @@ script = ExtResource( 3 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.0931, 0, 0 )
 
 [node name="10x1x13" parent="Enviroment" instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.0931, 0, 20.1561 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.0931, -0.32686, 20.1561 )
 
 [node name="10x1x14" parent="Enviroment" instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00409889, 0, 20.1561 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00409889, 0.0319691, 20.1561 )
 
 [node name="10x1x15" parent="Enviroment" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.0189, 0, 20.1561 )
@@ -83,6 +119,37 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.1842, 0, 40.2337 )
 [node name="10x1x11" parent="Enviroment" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.0312, 0, 0 )
 
+[node name="10x1x1" parent="Enviroment" instance=ExtResource( 4 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -29.8784, 1.99612, 60.1108 )
+
+[node name="10x1x6" parent="Enviroment" instance=ExtResource( 4 )]
+transform = Transform( -0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, -36.0279, 1.99612, 37.4762 )
+
+[node name="10x1x7" parent="Enviroment" instance=ExtResource( 4 )]
+transform = Transform( 0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 38.581, 1.99612, 37.4762 )
+
+[node name="10x1x2" parent="Enviroment" instance=ExtResource( 4 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 31.6311, 1.99612, 60.1108 )
+
+[node name="10x1x3" parent="Enviroment" instance=ExtResource( 4 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 23.4342, 1.99612, 80.043 )
+
+[node name="10x1x4" parent="Enviroment" instance=ExtResource( 4 )]
+transform = Transform( -0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, -20.5831, 1.99612, 81.0843 )
+
+[node name="10x1x5" parent="Enviroment" instance=ExtResource( 4 )]
+transform = Transform( -1, 0, -2.68221e-07, 0, 1, 0, 2.68221e-07, 0, -1, 1.45169, 1.99612, 88.0282 )
+
+[node name="5x1x5" parent="Enviroment" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.4196, 2.20751, 62.2911 )
+
+[node name="5x1x6" parent="Enviroment" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.601421, 2.20751, 62.2911 )
+
+[node name="5x1x7" parent="Enviroment" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.2395, 2.20751, 62.2911 )
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Move = SubResource( 1 )
 
 [node name="PlayerKB" parent="." instance=ExtResource( 2 )]

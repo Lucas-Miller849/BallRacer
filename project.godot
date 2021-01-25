@@ -49,6 +49,11 @@ ui_down={
  ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="level geometry"
+3d_physics/layer_2="player"
+
 [rendering]
 
 quality/driver/fallback_to_gles2=true
