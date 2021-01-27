@@ -37,3 +37,6 @@ func getInput():
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
 		rotate_y(-lerp(0, rotation_speed, event.relative.x))
+
+func pop(dir:Vector3):
+	velocity += dir 

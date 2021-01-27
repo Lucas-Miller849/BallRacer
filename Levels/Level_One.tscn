@@ -8,7 +8,7 @@
 
 [sub_resource type="Animation" id=1]
 resource_name = "Move"
-length = 2.0
+length = 2.5
 tracks/0/type = "bezier"
 tracks/0/path = NodePath("Enviroment/10x1x13:translation:x")
 tracks/0/interp = 1
@@ -39,6 +39,36 @@ tracks/2/keys = {
 "points": PoolRealArray( 20.1561, -0.25, 0, 0.25, 0, 20.1561, -0.25, 0, 0.25, 0, 20.1561, -0.25, 0, 0.25, 0 ),
 "times": PoolRealArray( 0, 1.1, 2 )
 }
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("Enviroment/10x1x14:translation:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( -0.00409889, -0.25, 0, 0.25, 0, -0.00409889, -0.25, 0, 0.25, 0, -0.00409889, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1.1, 2 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("Enviroment/10x1x14:translation:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( -20.1874, -0.25, 0, 0.25, 0, -0.00718117, -0.25, 0, 0.25, 0, -14.7228, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1.1, 2 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("Enviroment/10x1x14:translation:z")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 20.1561, -0.25, 0, 0.25, 0, 20.1561, -0.25, 0, 0.25, 0, 20.1561, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1.1, 2 )
+}
 
 [node name="Level_One" type="Spatial"]
 script = ExtResource( 3 )
@@ -54,7 +84,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.0931, 0, 0 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.0931, -0.32686, 20.1561 )
 
 [node name="10x1x14" parent="Enviroment" instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00409889, 0.0319691, 20.1561 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00409889, -14.7228, 20.1561 )
 
 [node name="10x1x15" parent="Enviroment" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.0189, 0, 20.1561 )
