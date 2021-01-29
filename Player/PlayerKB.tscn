@@ -25,5 +25,6 @@ material/0 = null
 shape = SubResource( 3 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.966219, 0.257723, 0, -0.257723, 0.966219, 0, 1.1862, 3.25537 )
+transform = Transform( 1, 0, 0, 0, 0.995697, 0.0926659, 0, -0.0926659, 0.995697, 0, 1.63218, 4.50851 )
 current = true
+fov = 118.898
